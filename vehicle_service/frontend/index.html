@@ -1,0 +1,52 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Service Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>🚗 Vehicle Service Management</h1>
+</header>
+
+<main>
+    <section class="form-section">
+        <h2>Add / Update Vehicle</h2>
+        <form id="vehicleForm">
+            <input type="hidden" id="vehicleId">
+            <input type="text" id="vehicleType" placeholder="Vehicle Type" required>
+            <input type="number" id="serviceYear" placeholder="Service Year" required>
+            <input type="text" id="ownerName" placeholder="Owner Name" required>
+            <input type="number" id="cost" placeholder="Service Cost" required>
+            <button type="submit">Save Vehicle</button>
+        </form>
+    </section>
+
+    <section class="table-section">
+        <h2>All Vehicles</h2>
+        <table id="vehicleTable">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Type</th>
+                <th>Year</th>
+                <th>Owner</th>
+                <th>Cost</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Data will be inserted by JS -->
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<footer>
+    © 2025 Vehicle Service Center | Powered by Spring Boot 💻
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
